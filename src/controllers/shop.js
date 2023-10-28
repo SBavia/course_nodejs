@@ -2,6 +2,7 @@ const Product = require("../models/product");
 const Order = require("../models/order");
 
 exports.getIndex = (req, res, next) => {
+  console.log("res.locals :>> ", res.locals);
   Product.find()
     .then((prods) => {
       res.render("shop/index", {
