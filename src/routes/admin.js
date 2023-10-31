@@ -21,7 +21,7 @@ router.post(
       .isLength({ min: 3 })
       .trim()
       .withMessage("Wrong title"),
-    body("imageUrl").isURL().withMessage("Wrong url"),
+    // body("imageUrl").isURL().withMessage("Wrong url"),
     body("price").isFloat().withMessage("Wrong price"),
     body("description")
       .isLength({ min: 5, max: 400 })
@@ -38,7 +38,6 @@ router.post(
   isauth,
   [
     body("title").isString().isLength({ min: 3 }).trim(),
-    body("imageUrl").isURL(),
     body("price").isFloat(),
     body("description").isLength({ min: 5, max: 400 }).trim(),
   ],
