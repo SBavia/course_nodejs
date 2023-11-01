@@ -192,20 +192,23 @@ form {
 
 .card__image {
   width: 100%;
-}
+  height: 200px;
 
-.card__image img {
-  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .card__actions {
   padding: 1rem;
   text-align: center;
-}
 
-.card__actions button,
-.card__actions a {
-  margin: 0 0.25rem;
+  button,
+  a {
+    margin: 0 0.25rem;
+  }
 }
 
 .btn {
@@ -218,23 +221,23 @@ form {
   background: white;
   border-radius: 3px;
   cursor: pointer;
-}
 
-.btn:hover,
-.btn:active {
-  background-color: #00695c;
-  color: white;
-}
+  &:hover,
+  &:active {
+    background-color: #00695c;
+    color: white;
+  }
 
-.btn.danger {
-  color: red;
-  border-color: red;
-}
+  .danger {
+    color: red;
+    border-color: red;
 
-.btn.danger:hover,
-.btn.danger:active {
-  background: red;
-  color: white;
+    &:hover,
+    &:active {
+      background: red;
+      color: white;
+    }
+  }
 }
 
 .user-message {
@@ -250,6 +253,26 @@ form {
 .user-message--error {
   border-color: red;
   background: rgb(240, 176, 176);
+}
+
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #00695c;
+    padding: 0.5rem;
+    border: 1px solid #00695c;
+    margin: 0 1rem;
+
+    &:hover,
+    &:active,
+    &.active {
+      background: #00695c;
+      color: white;
+    }
+  }
 }
 
 @media (min-width: 768px) {
