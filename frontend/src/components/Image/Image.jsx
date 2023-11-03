@@ -1,6 +1,6 @@
 import "./Image.css";
 
-const image = (props) => (
+const Image = (props) => (
   <div
     className="image"
     style={{
@@ -11,4 +11,4 @@ const image = (props) => (
   />
 );
 
-export default image;
+export default Image;

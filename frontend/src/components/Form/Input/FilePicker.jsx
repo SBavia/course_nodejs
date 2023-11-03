@@ -1,6 +1,6 @@
 import "./Input.css";
 
-const filePicker = (props) => (
+const FilePicker = (props) => (
   <div className="input">
     <label htmlFor={props.id}>{props.label}</label>
     <input
@@ -16,4 +16,4 @@ const filePicker = (props) => (
   </div>
 );
 
-export default filePicker;
+export default FilePicker;

@@ -1,7 +1,7 @@
 import Image from "./Image";
 import "./Avatar.css";
 
-const avatar = (props) => (
+const Avatar = (props) => (
   <div
     className="avatar"
     style={{ width: props.size + "rem", height: props.size + "rem" }}
@@ -10,4 +10,4 @@ const avatar = (props) => (
   </div>
 );
 
-export default avatar;
+export default Avatar;

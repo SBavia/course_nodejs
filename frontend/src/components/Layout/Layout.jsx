@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 import "./Layout.css";
 
-const layout = (props) => (
+const Layout = (props) => (
   <Fragment>
     <header className="main-header">{props.header}</header>
     {props.mobileNav}
@@ -10,4 +10,4 @@ const layout = (props) => (
   </Fragment>
 );
 
-export default layout;
+export default Layout;

@@ -1,6 +1,6 @@
 import "./MobileToggle.css";
 
-const mobileToggle = (props) => (
+const MobileToggle = (props) => (
   <button className="mobile-toggle" onClick={props.onOpen}>
     <span className="mobile-toggle__bar" />
     <span className="mobile-toggle__bar" />
@@ -8,4 +8,4 @@ const mobileToggle = (props) => (
   </button>
 );
 
-export default mobileToggle;
+export default MobileToggle;

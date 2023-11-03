@@ -8,7 +8,7 @@ const navItems = [
   { id: "signup", text: "Signup", link: "/signup", auth: false },
 ];
 
-const navigationItems = (props) => [
+const NavigationItems = (props) => [
   ...navItems
     .filter((item) => item.auth === props.isAuth)
     .map((item) => (
@@ -28,4 +28,4 @@ const navigationItems = (props) => [
   ),
 ];
 
-export default navigationItems;
+export default NavigationItems;

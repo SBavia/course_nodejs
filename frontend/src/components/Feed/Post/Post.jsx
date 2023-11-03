@@ -1,7 +1,8 @@
 import Button from "../../Button/Button";
+
 import "./Post.css";
 
-const post = (props) => (
+const Post = (props) => (
   <article className="post">
     <header className="post__header">
       <h3 className="post__meta">
@@ -27,4 +28,4 @@ const post = (props) => (
   </article>
 );
 
-export default post;
+export default Post;

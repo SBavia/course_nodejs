@@ -1,6 +1,6 @@
 import "./Input.css";
 
-const input = (props) => (
+const Input = (props) => (
   <div className="input">
     {props.label && <label htmlFor={props.id}>{props.label}</label>}
     {props.control === "input" && (
@@ -37,4 +37,4 @@ const input = (props) => (
   </div>
 );
 
-export default input;
+export default Input;

@@ -6,7 +6,7 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 
 import "./MainNavigation.css";
 
-const mainNavigation = (props) => (
+const MainNavigation = (props) => (
   <nav className="main-nav">
     <MobileToggle onOpen={props.onOpenMobileNav} />
     <div className="main-nav__logo">
@@ -21,4 +21,4 @@ const mainNavigation = (props) => (
   </nav>
 );
 
-export default mainNavigation;
+export default MainNavigation;

@@ -1,7 +1,7 @@
 import NavigationItems from "../NavigationItems/NavigationItems";
 import "./MobileNavigation.css";
 
-const mobileNavigation = (props) => (
+const MobileNavigation = (props) => (
   <nav className={["mobile-nav", props.open ? "open" : ""].join(" ")}>
     <ul
       className={["mobile-nav__items", props.mobile ? "mobile" : ""].join(" ")}
@@ -16,4 +16,4 @@ const mobileNavigation = (props) => (
   </nav>
 );
 
-export default mobileNavigation;
+export default MobileNavigation;
